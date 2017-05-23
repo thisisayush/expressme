@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?Roboto+Condensed|Roboto');
+
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: none;
+}
+#background-wrapper{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	z-index:0;
+}
+#aboutTitle{
+	font-size: 50px;	
+	font-weight: 500;
+	/**font-family: 'Roboto Condensed', sans-serif;**/
+	color:#FFF;
+}
+#aboutSubTitle{
+	font-size: 35px;
+	color: rgba(255,255,255,0.5);
+	font-weight: 300;
+	/**font-family: 'Roboto', sans-serif;**/
+}
+
+@media all and (max-width:400px){
+	#aboutTitle{
+		font-size: 35px;
+	}
+	#aboutSubtitle{
+		font-size: 30px;
+	}
+}
+#content{
+	z-index: 2;
+}
+#linksContainer>ul{
+	position: relative;
+	margin:10px auto;
+	left:0;right:0;
+	top:0;bottom:0;
+	list-style-type: none;
+	padding: 0;
+	color:rgba(255,255,255,0.5);
+	text-align: center;
+}
+
+#linksContainer .col{
+	display: inline-block;
+	float: none;
+}
+
+#linksContainer a{
+	text-decoration: none;
+	color:inherit;
+}
+#linksContainer>ul>li{
+	transition-duration: 500ms;
+	display: inline-block;
+}
+#linksContainer>ul>li:hover{
+	color:rgba(255,255,255,0.9);
+	transition-duration: 500ms;
+	cursor: pointer;
+}
+#linksContainer>ul>li.hover-blue:hover,
+#linksContainer>ul>li.hover-blue:focus,
+#linksContainer>ul>li.hover-blue:active{
+	color:#1565c0;
+}
+#linksContainer>ul>li.hover-lblue:hover,
+#linksContainer>ul>li.hover-lblue:focus,
+#linksContainer>ul>li.hover-lblue:active{
+	color:#40c4ff;
+}
+#linksContainer>ul>li.hover-red:hover,
+#linksContainer>ul>li.hover-red:focus,
+#linksContainer>ul>li.hover-red:active{
+	color:#c62828;
+}
+#linksContainer>ul>li.hover-yellow:hover,
+#linksContainer>ul>li.hover-yellow:focus,
+#linksContainer>ul>li.hover-yellow:active{
+	color:#fbc02d;
+}
+.typed-cursor{
+	animation: blink 0.5s infinite linear alternate;
+}
+@keyframes blink{
+	from{
+		opacity: 0.2;
+	}
+	to{
+		opacity: 0.8;
+	}
+}
+.slide-changer{
+	cursor: pointer;
+}
+.floating-control{
+	position: absolute;
+	color:rgba(255,255,255,0.3);
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 300;
+	transition-duration: 1s;
+	text-align: center;
+}
+.floating-control.control-top{
+	top:0;
+	margin-top:5px;
+}
+.floating-control.control-bottom{
+	bottom:0;
+	margin-bottom:5px;
+}
+.floating-control:hover,
+.floating-control:active{
+		color:rgba(255,255,255,0.7);
+}
+.avatar-custom{
+	border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 28%;
+}
+
+#menuPrimary{
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 40px;
+	color:rgba(255,255,255,0.3);
+}
+@media all and (max-width:400px){
+	#menuPrimary{
+		font-size: 25px;
+	}
+}
+@media all and (max-width:500px){
+	#menuPrimary{
+		font-size: 26px;
+	}
+}
+@media all and (max-width:768px){
+	#menuPrimary{
+		font-size: 30px;
+	}
+}
+#menuPrimary li.col{
+	display: inline-block;
+	float: none;
+	transition-duration: 500ms;
+	cursor: pointer;
+}
+
+#menuPrimary li:hover{
+	transition-duration: 500ms;
+	color:rgba(255,255,255,0.7);
+}
+.feature-box{
+	opacity: 0.5;
+	transition-duration: 1s;
+	height:200px;
+}
+.feature-box *{
+	transition-duration: 1s;
+}
+.feature-box .feature-icon{
+	width:80px;
+}
+.feature-box .feature-info p{
+	font-size: 1.4em;
+	font-weight: 400;
+}
+.feature-box .feature-subinfo{
+	font-size: 0.8em;
+	font-weight: 300;
+}
+.feature-box:hover,
+.feature-box:active{
+	opacity: 0.8;
+	cursor: crosshair;
+}
+.feature-box:hover .hover-yellow,
+.feature-box:active .hover-yellow{
+	color:#fbc02d;
+}
+.feature-box:hover .hover-red,
+.feature-box:active .hover-red{
+	color:#c62828;
+}
+.feature-box:hover .hover-blue,
+.feature-box:active .hover-blue{
+	color:#1565c0;
+}
+.feature-box:hover .hover-orange,
+.feature-box:active .hover-orange{
+	color:#ff6d00;
+}
+#aboutSection{
+	padding-top: 2em;
+}
+section .heading{
+	font-size: 60px;
+	font-weight: 400;
+	color:rgba(255,255,255,0.7);
+}
+
+.description{
+	font-size:1.5em;
+}
+@media all and (max-width:400px){
+	section .heading{
+		font-size: 40px;
+	}
+	.feature-box{
+		height: 100px;
+	}
+	.description{
+		font-size:1em;
+	}
+	.feature-icon i{
+		font-size: 2em;
+	}
+	.feature-box .feature-info p{
+		font-size: 1em;
+	}
+	.feature-box .feature-subinfo{
+		font-size: 0.8em;
+	}
+}
+section .description{
+	font-weight: 300;
+}
+.section-heading{
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding: 0;
+    font-size: 8em;
+    margin: 0.1em 0 0 0.1em;
+    font-weight: 600;
+    color: rgba(255,255,255,0.3);
+}
+
+@media all and (max-width:400px){
+	.section-heading{
+		font-size:6em;
+	}
+}
+
+
+.portfolio-box{
+	height:200px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 0.5em;
+	overflow: hidden;
+}
+.portfolio-box .portfolio-image{
+	position: absolute;
+	top:0;left:0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	box-shadow: inset 0 0 50px 1px #000;
+	background-size: cover;
+}
+.portfolio-box .portfolio-image>div{
+	position: relative;
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+}
+.portfolio-box .portfolio-image .image-overlay{
+	position: absolute;
+	background: transparent;
+	box-shadow: inset 0 0 50px 1px #000;
+	width: 100%;
+	height: 100%;
+	top:0;left:0;
+}
+.portfolio-box .portfolio-image img{
+	position: relative;
+	max-width:100%;
+	max-height: 100%;
+	min-width:100%;
+	min-height: 100%;
+	border-radius: 0.5em;
+}
+.portfolio-box .portfolio-info{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    font-weight: 700;
+	color:rgba(255,255,255,0.8);
+    opacity: 0;
+    background: rgba(0,176,255,0.5);
+    transition-duration: 1s;
+	text-transform: uppercase;
+	border-radius: 0.5em;
+}
+.portfolio-box .portfolio-subinfo{
+	text-transform: capitalize;
+	font-size: 20px;
+	font-weight: 300;
+}
+.portfolio-box:hover{
+	cursor: crosshair;
+}
+.portfolio-box:hover .portfolio-info,
+.portfolio-box:active .portfolio-info,
+.portfolio-box:focus .portfolio-info{
+	opacity: 1;
+	transition-duration: 1s;
+}
+
+@media all and (max-width:400px){
+	.portfolio-box{
+		height: 150px;
+	}
+	.portfolio-box .portfolio-info{
+		font-size: 22px;
+	}
+	.portfolio-box .portfolio-subinfo{
+		font-size: 16px;
+	}
+}
