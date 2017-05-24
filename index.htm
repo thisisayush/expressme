@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/custom.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/colors.css">
+        <title>Ayush Agarwal | Portfolio</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#000" />
+        <meta name="description" content="I am a B.Tech (CSE) second year student studying in Amity University. Deeply interested in Web Development, you can ping me for coffee, freelance/team web projects, sharing experience or to be a partner in your startup :)" />
+        <meta name="keywords" content="ayush, thisisayush, Ayush Agarwal, lucifer aka ayush, ayush aka lucifer" />
+        <meta name="author" content="Ayush Agarwal" />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="icon" href="images/avatar.png" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/colors.css" />
         <link rel="stylesheet" href="css/materialize.min.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#000">
+        <link rel="stylesheet" href="css/preloader.css" />
     </head>
     <body>
-            <div id="pageProgress">
-                <div class="progress-bar"></div>
+            <div id="preloader">
+                <div class="absolute-center">
+                    <div class="loader"></div>
+                    <div class="loader-text margin-center">Loading</div>
+                </div>
             </div>
-            
             <div id="wrapper">
                 <div id="background-wrapper">
                     <div id="particles"></div>
@@ -275,35 +286,12 @@
     <script src="js/materialize.min.js" /></script>
     <script src="js/particles.min.js"></script>
     <script src="js/slide.js"></script>
+    <script src="js/page.progress.js"></script>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/main.js"></script>
  
     <script>
-        $(document).scroll(function(){
-            var per = $(this).scrollTop() * 100/($(this).height() - $(window).height());
-            $("#pageProgress > .progress-bar").css("width",per+"%");
-        });
-        $(document).ready(function(e){
-            var mHeight = 0;
-            $(".absolute-center").each(function(){
-                mHeight = 0;
-                $(this).children("div").each(function(){
-                    mHeight += $(this).height();
-                });
-                $(this).height(mHeight);
-            });
-            $(".slideshow img").first().fadeIn();
-            //$("#mainSection .absolute-center").height(mHeight);
-            $("#aboutOne .animated-type").typed({
-                strings: ["Student", "Programmer","Dreamer"],
-                shuffle: true,
-                loop: true,
-                loopCount: null,
-                typeSpeed: 60
-            });
-            $("html,body").animate({
-                scrollTop: $(".slide.active").offset().top
-            },2000);
-            particlesJS.load('particles','js/particles-config.json');
-        });
+       
     </script>        
 
     </body>
