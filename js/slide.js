@@ -4,11 +4,11 @@ $(document).ready(function(){
         var slideId = $(this).attr("data-slide");
         var slide = $("#"+slideId);
         var currSlide = $(this).parents(".slide");
-        console.log(currSlide.html());
         if(slide=="undefined" || typeof(slide)=="undefined"){
             return 0;
         }
-        var slideOffset = slide.offset().top;
+        var slideOffset = slide.offset().top-42;
+        console.log(slideOffset);
         $('body, html').animate({
             scrollTop: slideOffset
         },2000);
