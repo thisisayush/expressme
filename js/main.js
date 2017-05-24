@@ -12,9 +12,9 @@ $(document).ready(function(e){
         typeSpeed: 60
     });
     
-    /** Scroll to active slide */
+    /** Scroll to home */
     $("html,body").animate({
-        scrollTop: $(".slide.active").offset().top
+        scrollTop: 0
     },2000);
 
     /** Load Particles Background */
@@ -28,6 +28,7 @@ $(document).ready(function(e){
     /** Bind Window Size dependent operations*/
     $(window).resize(function(){
         fixAbsCenter();
+        particlesJS.load('particles','js/particles-config.json');
     });
 
     function fixAbsCenter(){
