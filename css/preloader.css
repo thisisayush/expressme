@@ -6,6 +6,10 @@
     background: #000;
     z-index:9999;
 }
+#preloader .absolute-center{
+  width:125px;
+  height: 93px;
+}
 #preloader .loader-text{
     position: absolute;
     bottom:0;
