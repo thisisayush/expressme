@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="css/preloader.css" />
     </head>
     <body>
+        <div id="console" style="position:fixed;right:0;top:0;color:#FFF;font-size:0.8em;z-index:999999;">
+        </div>
             <div id="minScreenSizeOverlay">
                 <div class="absolute-center">
                     <div class="center-align text-white"><i class="fa fa-times fa-4x"></i><br>Your screen size is too small! Use a bigger display<br>(min. 300px x 400px)</div>
@@ -40,35 +42,36 @@
                     <section id="mainSection" class="full-screen slide active">
                         <div class="container">
                             <div class="absolute-center">
-                                <div class="avatar avatar-custom center-h">
-                                    <img src="images/avatar.png">
-                                </div>
-                                <div id="aboutOne" class="center-h center-align">
-                                    <div id="aboutTitle">Ayush Agarwal</div>
-                                    <div id="aboutSubTitle"><span class="animated-type">...</span></div>
-                                    <div id="linksContainer" class="container center-align valign-wrapper">
-                                        <ul class="row center-align" style="font-size: 1.2em">   
-                                            <li class="col hover-blue"><a href="https://www.facebook.com/thisisayush" title="Find me on Facebook"><i class="icon fa fa-facebook"></i></a></li>
-                                            <li class="col"><a href="https://github.com/thisisayush" title="Star me on github"><i class="icon fa fa-github"></i></a></li>
-                                            <li class="col hover-blue"><a href="https://linkedin.com/in/thisisayush" title="Follow me on Linked In"><i class="icon fa fa-linkedin"></i></a></li>
-                                            <li class="col hover-red"><a href="https://youtube.com/thisisayush" title="Subscribe me on YouTube"><i class="icon fa fa-youtube "></i></a></li>
-                                            <li class="col hover-lblue"><a href="https://telegram.com/thisisayush" title="Ping me on Telegram"><i class="icon fa fa-telegram "></i></a></li>
-                                            <li class="col hover-blue"><a href="https://twitter.com/thisisayushaa" title="Follow me on Twitter"><i class="icon fa fa-twitter "></i></a></li>
-                                            <li class="col hover-yellow"><a href="mailto:contact@thisisayush.com" title="Email"><i class="icon fa fa-envelope"></i></a></li>
-                                        </ul>
+                                <div class="wrapper">
+                                    <div class="avatar avatar-custom center-h">
+                                        <img src="images/avatar.png">
                                     </div>
-                                </div>
-                                <div id="menuPrimary">
-                                    <div class="container">
-                                        <ul class="row center-align margin-center">
-                                            <li class="col slide-changer" data-slide="aboutSection">About</li>
-                                            <li class="col slide-changer" data-slide="portfolioSection">Portfolio</li>
-                                            <li class="col slide-changer" data-slide="contactSection">Contact</li>
-                                        </ul>
+                                    <div id="aboutOne" class="center-h center-align">
+                                        <div id="aboutTitle">Ayush Agarwal</div>
+                                        <div id="aboutSubTitle"><span class="animated-type">...</span></div>
+                                        <div id="linksContainer" class="container center-align valign-wrapper">
+                                            <ul class="row center-align" style="font-size: 1.2em">   
+                                                <li class="col hover-blue"><a href="https://www.facebook.com/thisisayush" title="Find me on Facebook"><i class="icon fa fa-facebook"></i></a></li>
+                                                <li class="col"><a href="https://github.com/thisisayush" title="Star me on github"><i class="icon fa fa-github"></i></a></li>
+                                                <li class="col hover-blue"><a href="https://linkedin.com/in/thisisayush" title="Follow me on Linked In"><i class="icon fa fa-linkedin"></i></a></li>
+                                                <li class="col hover-red"><a href="https://youtube.com/thisisayush" title="Subscribe me on YouTube"><i class="icon fa fa-youtube "></i></a></li>
+                                                <li class="col hover-lblue"><a href="https://telegram.com/thisisayush" title="Ping me on Telegram"><i class="icon fa fa-telegram "></i></a></li>
+                                                <li class="col hover-blue"><a href="https://twitter.com/thisisayushaa" title="Follow me on Twitter"><i class="icon fa fa-twitter "></i></a></li>
+                                                <li class="col hover-yellow"><a href="mailto:contact@thisisayush.com" title="Email"><i class="icon fa fa-envelope"></i></a></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
+                                    <div id="menuPrimary">
+                                        <div class="container">
+                                            <ul class="row center-align margin-center">
+                                                <li class="col slide-changer" data-slide="aboutSection">About</li>
+                                                <li class="col slide-changer" data-slide="portfolioSection">Portfolio</li>
+                                                <li class="col slide-changer" data-slide="contactSection">Contact</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> <!-- Wrapper -->
                             </div>
-                           
                         </div>
                     </section>
                     <section id="aboutSection" class="full-screen slide">
@@ -76,81 +79,83 @@
                         <div class="slide-changer floating-control control-bottom margin-center" data-slide="portfolioSection">Portfolio</div>
                         <div class="section-heading">About</div>
                         <div class="absolute-center">    
-                            <div class="container text-white">
-                                <div class="row">
-                                    <div class="col s12 heading">
-                                        
-                                    </div>  
-                                    <div class="col s12 description">
-                                        <p class="center-align">I am a B.Tech (CSE) second year student studying in Amity University. Deeply interested in Web Development, you can ping me for coffee, freelance/team web projects, sharing experience or to be a partner in your startup :)</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col s6 m3 feature-box">
-                                        <div class="container">
-                                                <div class="row">
-                                                    <div class="col s12 valign-wrapper">
-                                                        <div class="feature-icon margin-center center-align">
-                                                            <i class="fa fa-university fa-4x"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col s12">
-                                                        <div class="feature-info center-align">
-                                                            <p class="margin-center">Amity University<br><span class="feature-subinfo">B. Tech(CSE)</span></p>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
+                            <div class="wrapper">
+                                <div class="container text-white">
+                                    <div class="row">
+                                        <div class="col s12 heading">
+                                            
+                                        </div>  
+                                        <div class="col s12 description">
+                                            <p class="center-align">I am a B.Tech (CSE) second year student studying in Amity University. Deeply interested in Web Development, you can ping me for coffee, freelance/team web projects, sharing experience or to be a partner in your startup :)</p>
                                         </div>
                                     </div>
-                                    <div class="col s6 m3 feature-box">
-                                        <div class="container">
-                                                <div class="row">
-                                                    <div class="col s12 valign-wrapper">
-                                                        <div class="feature-icon margin-center center-align">
-                                                            <i class="fa fa-coffee fa-4x hover-yellow"></i>
+                                    <div class="row">
+                                        <div class="col s6 m3 feature-box">
+                                            <div class="container">
+                                                    <div class="row">
+                                                        <div class="col s12 valign-wrapper">
+                                                            <div class="feature-icon margin-center center-align">
+                                                                <i class="fa fa-university fa-4x"></i>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col s12">
-                                                        <div class="feature-info center-align">
-                                                            <p class="margin-center">I <i class="fa fa-heart hover-red"></i> Coffee</p>
-                                                        </div>
+                                                        <div class="col s12">
+                                                            <div class="feature-info center-align">
+                                                                <p class="margin-center">Amity University<br><span class="feature-subinfo">B. Tech(CSE)</span></p>
+                                                            </div>
 
+                                                        </div>
                                                     </div>
-                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col s6 m3 feature-box">
-                                        <div class="container">
-                                                <div class="row">
-                                                    <div class="col s12 valign-wrapper">
-                                                        <div class="feature-icon margin-center center-align">
-                                                            <i class="fa fa-chrome fa-4x hover-orange"></i>
+                                        <div class="col s6 m3 feature-box">
+                                            <div class="container">
+                                                    <div class="row">
+                                                        <div class="col s12 valign-wrapper">
+                                                            <div class="feature-icon margin-center center-align">
+                                                                <i class="fa fa-coffee fa-4x hover-yellow"></i>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col s12">
-                                                        <div class="feature-info center-align">
-                                                            <p class="margin-center">Web Developer</p>
-                                                        </div>
+                                                        <div class="col s12">
+                                                            <div class="feature-info center-align">
+                                                                <p class="margin-center">I <i class="fa fa-heart hover-red"></i> Coffee</p>
+                                                            </div>
 
+                                                        </div>
                                                     </div>
-                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col s6 m3 feature-box">
-                                        <div class="container">
-                                                <div class="row">
-                                                    <div class="col s12 valign-wrapper">
-                                                        <div class="feature-icon margin-center center-align">
-                                                            <i class="fa fa-suitcase fa-4x hover-blue"></i>
+                                        <div class="col s6 m3 feature-box">
+                                            <div class="container">
+                                                    <div class="row">
+                                                        <div class="col s12 valign-wrapper">
+                                                            <div class="feature-icon margin-center center-align">
+                                                                <i class="fa fa-chrome fa-4x hover-orange"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col s12">
+                                                            <div class="feature-info center-align">
+                                                                <p class="margin-center">Web Developer</p>
+                                                            </div>
+
                                                         </div>
                                                     </div>
-                                                    <div class="col s12">
-                                                        <div class="feature-info center-align">
-                                                            <p class="margin-center">Entrepreneur</p>
+                                            </div>
+                                        </div>
+                                        <div class="col s6 m3 feature-box">
+                                            <div class="container">
+                                                    <div class="row">
+                                                        <div class="col s12 valign-wrapper">
+                                                            <div class="feature-icon margin-center center-align">
+                                                                <i class="fa fa-suitcase fa-4x hover-blue"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col s12">
+                                                            <div class="feature-info center-align">
+                                                                <p class="margin-center">Entrepreneur</p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -162,90 +167,92 @@
                         <div class="slide-changer floating-control control-bottom margin-center" data-slide="contactSection">Contact</div>
                         <div class="section-heading">Portfolio</div>
                         <div class="absolute-center">    
-                            <div class="container text-white">
-                                <div class="row">
-                                    <div class="col s12 heading">
-                                        Some of My Works
-                                    </div>  
-                                    <div class="col s12 description">
-                                        <p class="center-align"></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="portfolio-box col s6 l3 ">
-                                        <div class="container">
-                                                <div class="row">
-                                                    <div class="col s12 valign-wrapper">
-                                                        <div class="portfolio-image margin-center center-align">
-                                                            <img src="images/portfolio1.jpg"/>
-                                                            <div class="image-overlay"></div>
-                                                        </div>
-                                                        <div class="portfolio-info center-align">
-                                                            <p class="margin-center">ASET ALiAS</p>
-                                                            <div class="portfolio-subinfo">
-                                                                A club website based on Bootstrap, Jquery and JSON
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
+                            <div class="wrapper">
+                                <div class="container text-white">
+                                    <div class="row">
+                                        <div class="col s12 heading">
+                                            Some of My Works
+                                        </div>  
+                                        <div class="col s12 description">
+                                            <p class="center-align"></p>
                                         </div>
                                     </div>
-                                    <div class="portfolio-box col s6 l3 ">
-                                        <div class="container">
-                                                <div class="row">
-                                                    <div class="col s12 valign-wrapper">
-                                                        <div class="portfolio-image margin-center center-align">
-                                                            <img src="images/portfolio2.jpg"/>
-                                                            <div class="image-overlay"></div>
-                                                        </div>
-                                                        <div class="portfolio-info center-align">
-                                                            <p class="margin-center">fbGallery</p>
-                                                            <div class="portfolio-subinfo">
-                                                                A jquery plugin to show images from facebook page
+                                    <div class="row">
+                                        <div class="portfolio-box col s6 l3 ">
+                                            <div class="container">
+                                                    <div class="row">
+                                                        <div class="col s12 valign-wrapper">
+                                                            <div class="portfolio-image margin-center center-align">
+                                                                <img src="images/portfolio1.jpg"/>
+                                                                <div class="image-overlay"></div>
                                                             </div>
-                                                        </div>
+                                                            <div class="portfolio-info center-align">
+                                                                <p class="margin-center">ASET ALiAS</p>
+                                                                <div class="portfolio-subinfo">
+                                                                    A club website based on Bootstrap, Jquery and JSON
+                                                                </div>
+                                                            </div>
 
+                                                        </div>
                                                     </div>
-                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="portfolio-box col s6 l3 ">
-                                        <div class="container">
-                                                <div class="row">
-                                                    <div class="col s12 valign-wrapper">
-                                                        <div class="portfolio-image margin-center center-align">
-                                                            <img src="images/portfolio3.jpg"/>
-                                                            <div class="image-overlay"></div>
-                                                        </div>
-                                                        <div class="portfolio-info center-align">
-                                                            <p class="margin-center">Express Me</p>
-                                                            <div class="portfolio-subinfo">
-                                                                A personal portfolio page this website is running on.
+                                        <div class="portfolio-box col s6 l3 ">
+                                            <div class="container">
+                                                    <div class="row">
+                                                        <div class="col s12 valign-wrapper">
+                                                            <div class="portfolio-image margin-center center-align">
+                                                                <img src="images/portfolio2.jpg"/>
+                                                                <div class="image-overlay"></div>
                                                             </div>
-                                                        </div>
+                                                            <div class="portfolio-info center-align">
+                                                                <p class="margin-center">fbGallery</p>
+                                                                <div class="portfolio-subinfo">
+                                                                    A jquery plugin to show images from facebook page
+                                                                </div>
+                                                            </div>
 
+                                                        </div>
                                                     </div>
-                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="portfolio-box col s6 l3 ">
-                                        <div class="container">
-                                                <div class="row">
-                                                    <div class="col s12 valign-wrapper">
-                                                        <div class="portfolio-image margin-center center-align">
-                                                            <img src="images/portfolio4.jpg"/>
-                                                            <div class="image-overlay"></div>
-                                                        </div>
-                                                        <div class="portfolio-info center-align">
-                                                            <p class="margin-center">Letstream</p>
-                                                            <div class="portfolio-subinfo">
-                                                                A video publishing Platform
+                                        <div class="portfolio-box col s6 l3 ">
+                                            <div class="container">
+                                                    <div class="row">
+                                                        <div class="col s12 valign-wrapper">
+                                                            <div class="portfolio-image margin-center center-align">
+                                                                <img src="images/portfolio3.jpg"/>
+                                                                <div class="image-overlay"></div>
                                                             </div>
-                                                        </div>
+                                                            <div class="portfolio-info center-align">
+                                                                <p class="margin-center">Express Me</p>
+                                                                <div class="portfolio-subinfo">
+                                                                    A personal portfolio page this website is running on.
+                                                                </div>
+                                                            </div>
 
+                                                        </div>
                                                     </div>
-                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-box col s6 l3 ">
+                                            <div class="container">
+                                                    <div class="row">
+                                                        <div class="col s12 valign-wrapper">
+                                                            <div class="portfolio-image margin-center center-align">
+                                                                <img src="images/portfolio4.jpg"/>
+                                                                <div class="image-overlay"></div>
+                                                            </div>
+                                                            <div class="portfolio-info center-align">
+                                                                <p class="margin-center">Letstream</p>
+                                                                <div class="portfolio-subinfo">
+                                                                    A video publishing Platform
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -257,28 +264,33 @@
                         <div class="slide-changer floating-control control-bottom margin-center" data-slide="mainSection">Back To Top</div>
                         <div class="section-heading">Contact</div>
                         <div class="absolute-center">    
-                            <div class="container text-white">
-                                <div class="row">
-                                    <div class="col s12 heading">
-                                       Find me On
-                                    </div>  
-                                    <div class="col s12 description">
-                                        <p class="center-align"></p>
+                            <div class="wrapper">
+                                <div class="container text-white">
+                                    <div class="row">
+                                        <div class="col s12 heading">
+                                        Find me On
+                                        </div>  
+                                        <div class="col s12 description">
+                                            <p class="center-align"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="linksContainer" class="container center-align valign-wrapper">
+                                            <ul class="row center-align">   
+                                                <li class="col hover-blue"><a href="https://www.facebook.com/thisisayush" title="Find me on Facebook"><i class="icon fa fa-facebook fa-4x"></i></a></li>
+                                                <li class="col"><a href="https://github.com/thisisayush" title="Star me on github"><i class="icon fa fa-github fa-4x"></i></a></li>
+                                                <li class="col hover-blue"><a href="https://linkedin.com/in/thisisayush" title="Follow me on Linked In"><i class="icon fa fa-linkedin fa-4x"></i></a></li>
+                                                <li class="col hover-red"><a href="https://youtube.com/thisisayush" title="Subscribe me on YouTube"><i class="icon fa fa-youtube fa-4x"></i></a></li>
+                                                <li class="col hover-lblue"><a href="https://telegram.com/thisisayush" title="Ping me on Telegram"><i class="icon fa fa-telegram fa-4x"></i></a></li>
+                                                <li class="col hover-blue"><a href="https://twitter.com/thisisayushaa" title="Follow me on Twitter"><i class="icon fa fa-twitter fa-4x"></i></a></li>
+                                                <li class="col hover-yellow"><a href="mailto:contact@thisisayush.com" title="Email"><i class="icon fa fa-envelope fa-4x"></i></a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div id="linksContainer" class="container center-align valign-wrapper">
-                                        <ul class="row center-align">   
-                                            <li class="col hover-blue"><a href="https://www.facebook.com/thisisayush" title="Find me on Facebook"><i class="icon fa fa-facebook fa-4x"></i></a></li>
-                                            <li class="col"><a href="https://github.com/thisisayush" title="Star me on github"><i class="icon fa fa-github fa-4x"></i></a></li>
-                                            <li class="col hover-blue"><a href="https://linkedin.com/in/thisisayush" title="Follow me on Linked In"><i class="icon fa fa-linkedin fa-4x"></i></a></li>
-                                            <li class="col hover-red"><a href="https://youtube.com/thisisayush" title="Subscribe me on YouTube"><i class="icon fa fa-youtube fa-4x"></i></a></li>
-                                            <li class="col hover-lblue"><a href="https://telegram.com/thisisayush" title="Ping me on Telegram"><i class="icon fa fa-telegram fa-4x"></i></a></li>
-                                            <li class="col hover-blue"><a href="https://twitter.com/thisisayushaa" title="Follow me on Twitter"><i class="icon fa fa-twitter fa-4x"></i></a></li>
-                                            <li class="col hover-yellow"><a href="mailto:contact@thisisayush.com" title="Email"><i class="icon fa fa-envelope fa-4x"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            </div>
+                        </div>
+                    </section>
                     <footer id="mainFooter">
                         
                     </footer>

@@ -20,13 +20,13 @@
     animation-timing-function: linear;
     /**background-image: -webkit-gradient(	linear, left bottom, left top, color-stop(0.56, #F24D55), color-stop(0.57, #FF924F), color-stop(0.74, #FFC164), color-stop(0.74, #62C374), color-stop(0.34, #F24D55), color-stop(0.33, #00AEDA));**/
 }
-@media all and (min-width:300px){
+@media all and (min-width:300px), all and (min-height:0px){
 	.avatar{
         width: 120px;
         height: 120px;
 	}
 }
-@media all and (min-width:400px){
+@media all and (min-width:420px) and (min-height:420px){
 	.avatar{
         width: 150px;
         height: 150px;

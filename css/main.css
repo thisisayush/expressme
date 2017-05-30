@@ -5,7 +5,7 @@
 	background: #000;
 	z-index: 10000;
 }
-@media all and (min-width:300px) and (min-height:400px){
+@media all and (min-width:300px){
 	#minScreenSizeOverlay{
 		display: none;
 	}
@@ -31,6 +31,7 @@ body,html{
 }
 section{
 	overflow: hidden;
+	min-height: 400px;
 }
 #aboutTitle{
 	font-size: 50px;	
@@ -42,7 +43,7 @@ section{
 	color: rgba(255,255,255,0.5);
 	font-weight: 300;
 }
-@media all and (min-width:300px){
+@media all and (min-width:300px), all and (max-height:400px){
 	#aboutTitle{
 		font-size: 32px;
 	}

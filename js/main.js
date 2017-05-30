@@ -1,7 +1,7 @@
 $(document).ready(function(e){
     /** Content Reveal Animation */
     window.sr = ScrollReveal();
-    sr.reveal("section",{duration:1000,reset:true,easing:'linear',delay:200, viewFactor:0.3});
+    sr.reveal("section .wrapper",{duration:1000,reset:true,easing:'linear',delay:200, viewFactor:0.3});
 
     /** Initialize Typed.js */
     $("#aboutOne .animated-type").typed({
@@ -29,6 +29,7 @@ $(document).ready(function(e){
     $(window).resize(function(){
         fixAbsCenter();
         particlesJS.load('particles','js/particles-config.json');
+        $("#console").html("Width: "+$(this).width()+" <br>Height: "+$(this).height());
     });
 
     function fixAbsCenter(){
@@ -39,6 +40,8 @@ $(document).ready(function(e){
                 mHeight += $(this).height();
             });
             $(this).height(mHeight);
+            $(this).parent("section.slide").css("min-height",mHeight+40);
+
         });
     }
 });
