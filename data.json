@@ -1,33 +1,38 @@
-[{
+{
     "meta":{
         "title":"Ayush Agarwal | Portfolio"
     },
 	"home": {
 		"title": "Home",
-		"heading": "",
-		"subheading": ""
+		"heading": "Ayush Agarwal",
+		"subheading": ["Student", "Programmer","Dreamer"],
+        "avatar": "images/avatar.png"
 	},
 	"about": {
 		"title": "About",
 		"heading": "",
 		"description": "I am a B.Tech (CSE) second year student studying in Amity University. Deeply interested in Web Development, you can ping me for coffee, freelance/team web projects, sharing experience or to be a partner in your startup :)",
-		"feature-box": [{
+		"featureBox": [{
 				"icon": "fa-university",
+				"hover": "default",
 				"info": "Amity University",
 				"subinfo": "B.Tech (CSE)"
 			},
 			{
 				"icon": "fa-coffee",
+				"hover": "yellow",
 				"info": "I <i class=\"fa fa-heart hover-red\"></i> Coffee",
 				"subinfo": ""
 			},
 			{
 				"icon": "fa-chrome",
+				"hover": "orange",
 				"info": "Web Developer",
 				"subinfo": ""
 			},
 			{
 				"icon": "fa-suitcase",
+				"hover": "default",
 				"info": "Entrepreneur",
 				"subinfo": ""
 			}
@@ -37,7 +42,7 @@
 		"title": "Portfolio",
 		"heading": "Some of My Works",
 		"description": "",
-		"portfolio-box": [{
+		"portfolioBox": [{
 				"image": "images/portfolio1.jpg",
 				"info": "ASET ALiAS",
 				"subinfo": "A club website based on Bootstrap, Jquery and JSON"
@@ -59,7 +64,7 @@
 			}
 		]
 	},
-	"contactSection": {
+	"contact": {
 		"title": "Contact",
 		"heading": "Find me on",
 		"description": ""
@@ -91,7 +96,7 @@
 		{
 			"title": "Ping me on Telegram",
 			"url": "https://telegram.com/thisisayush/",
-			"icon": "fa-facebook",
+			"icon": "fa-telegram",
 			"color": "lblue"
 		},
 		{
@@ -107,4 +112,4 @@
 			"color": "yellow"
 		}
 	]
-}]
+}

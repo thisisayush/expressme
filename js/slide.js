@@ -7,7 +7,7 @@ $(document).ready(function(){
         if(slide=="undefined" || typeof(slide)=="undefined"){
             return 0;
         }
-        var slideOffset = slide.offset().top-42;
+        var slideOffset = slide.offset().top;
         console.log(slideOffset);
         $('body, html').animate({
             scrollTop: slideOffset
