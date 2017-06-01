@@ -1,21 +1,57 @@
-#minScreenSizeOverlay{
-	position: fixed;
-	width:100%;
-	height: 100%;
-	background: #000;
-	z-index: 10000;
-}
-@media all and (min-width:300px){
-	#minScreenSizeOverlay{
-		display: none;
-	}
-}
+/**
+    Express Me | A personal portfolio HTML Template 
+    Author: Ayush Agarwal (Friendsocial Developer Network) (contact@thisisayush.com)
+    License: MIT
+    Features:
+    1. Particles Background (Customisable)
+    2. Social Links
+    3. 4 Sections - Home, About, Portfolio, Contact
+    4. Smooth Scrolling
+    5. JSON Data Implementation
+    6. Typed.js Animated Section
+    7. Scroll Reveal Effects
+    8. 4 Personal FEatures in About Section
+    9. 4 Portfolio Boxes in Portfolio Section
+    10. Section Headings
+    11. Preloader (CSS Powered)
+    12. Page Progress Indicator
+ **/
 body,html{
 	width: 100%;
 	height: 100%;
+	min-width: 300px;
 	margin: 0;
 	padding: none;
 }
+/** Custom Classes **/
+.full-screen{
+    position:relative;
+    width:100%;
+    height: 100vh;
+}
+.absolute-center{
+    position: absolute;
+    margin: auto;
+    top:0;bottom:0;
+    left:0;right:0;
+}
+.margin-center{
+    margin-left:auto;
+    margin-right:auto;
+    left: 0; right: 0;
+}
+.typed-cursor{
+	animation: blink 0.5s infinite linear alternate;
+}
+.slide-changer{
+	cursor: pointer;
+}
+.round-border{
+	border: 5px solid #FFF;
+	border-radius: 50%;
+}
+/** End Custom Classes **/
+/** Background **/
 #background-wrapper{
 	position: fixed;
 	top:0;
@@ -29,9 +65,138 @@ body,html{
 	height: 100%;
 	width:100%;
 }
+/** End Background **/
+/** Section Styles **/
 section{
 	overflow: hidden;
 	min-height: 400px;
+	min-width: 300px;
+}
+section .heading{
+	font-size: 60px;
+	font-weight: 400;
+	color:rgba(255,255,255,0.7);
+}
+.description{
+	font-size:1.5em;
+}
+section .description{
+	font-weight: 300;
+}
+.section-heading{
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding: 0;
+    font-size: 8em;
+    margin: 0.5em 0 0 0.2em;
+    font-weight: 600;
+    color: rgba(255,255,255,0.3);
+}
+@media all and (min-width:300px){
+	section .heading{
+		font-size: 28px;
+	}
+	.description{
+		font-size:1em;
+	}
+	.section-heading{
+		font-size: 4em;
+	}
+}
+@media all and (min-width:400px){
+	section .heading{
+		font-size: 40px;
+	}
+	.section-heading{
+		font-size: 6em;
+	}
+}
+@media all and (min-width:768px){
+	section .heading{
+		font-size: 60px;
+	}
+	.description{
+		font-size:1.5em;
+	}
+	.section-heading{
+		font-size: 8em;
+	}
+}
+/** End Section Styles **/
+/** Containers **/
+#content{
+	z-index: 2;
+}
+#pageTop{
+	display: none;
+	width:45px;
+	height: 45px;
+	position: fixed;
+	bottom:0;
+	right: 0;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	color: rgba(255,255,255,0.3);
+	border-color:rgba(255,255,255,0.3);
+	cursor: pointer;
+	z-index: 10;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+#pageTop>i{
+	text-align: center;
+	padding: 2px 3px;
+}
+#pageTop:hover{
+	color: rgba(255,255,255,0.9);
+	border-color:rgba(255,255,255,0.9);
+}
+/** End Containers **/
+/** About Section **/
+.avatar{
+    width: 200px;
+    height: 200px; 
+    overflow: hidden;
+    animation-name: rotate-border;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.avatar img{
+    width: 100%;
+    height: 100%;
+	transform: scale(1);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+.avatar-custom{
+	border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 28%;
+}
+.avatar:hover > img{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+@media all and (min-width:300px), all and (min-height:0px){
+	.avatar{
+        width: 120px;
+        height: 120px;
+	}
+}
+@media all and (min-width:420px) and (min-height:420px){
+	.avatar{
+        width: 150px;
+        height: 150px;
+	}
+}
+@media all and (min-width:768px){
+	.avatar{
+        width: 200px;
+        height: 200px;
+	}
 }
 #aboutTitle{
 	font-size: 50px;	
@@ -67,98 +232,6 @@ section{
 		font-size: 35px;
 	}
 }
-#content{
-	z-index: 2;
-}
-#linksContainer>ul{
-	position: relative;
-	margin:10px auto;
-	left:0;right:0;
-	top:0;bottom:0;
-	list-style-type: none;
-	padding: 0;
-	color:rgba(255,255,255,0.5);
-	text-align: center;
-}
-
-#linksContainer .col{
-	display: inline-block;
-	float: none;
-}
-
-#linksContainer a{
-	text-decoration: none;
-	color:inherit;
-}
-#linksContainer>ul>li{
-	transition-duration: 500ms;
-	display: inline-block;
-}
-#linksContainer>ul>li:hover{
-	color:rgba(255,255,255,0.9);
-	transition-duration: 500ms;
-	cursor: pointer;
-}
-#linksContainer>ul>li.hover-blue:hover,
-#linksContainer>ul>li.hover-blue:focus,
-#linksContainer>ul>li.hover-blue:active{
-	color:#1565c0;
-}
-#linksContainer>ul>li.hover-lblue:hover,
-#linksContainer>ul>li.hover-lblue:focus,
-#linksContainer>ul>li.hover-lblue:active{
-	color:#40c4ff;
-}
-#linksContainer>ul>li.hover-red:hover,
-#linksContainer>ul>li.hover-red:focus,
-#linksContainer>ul>li.hover-red:active{
-	color:#c62828;
-}
-#linksContainer>ul>li.hover-yellow:hover,
-#linksContainer>ul>li.hover-yellow:focus,
-#linksContainer>ul>li.hover-yellow:active{
-	color:#fbc02d;
-}
-.typed-cursor{
-	animation: blink 0.5s infinite linear alternate;
-}
-@keyframes blink{
-	from{
-		opacity: 0.2;
-	}
-	to{
-		opacity: 0.8;
-	}
-}
-.slide-changer{
-	cursor: pointer;
-}
-.floating-control{
-	position: absolute;
-	color:rgba(255,255,255,0.3);
-	font-size: 1.5em;
-	text-transform: uppercase;
-	font-weight: 300;
-	transition-duration: 1s;
-	text-align: center;
-}
-.floating-control.control-top{
-	top:0;
-	margin-top:5px;
-}
-.floating-control.control-bottom{
-	bottom:0;
-	margin-bottom:5px;
-}
-.floating-control:hover,
-.floating-control:active{
-		color:rgba(255,255,255,0.7);
-}
-.avatar-custom{
-	border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 28%;
-}
-
 #menuPrimary{
 	text-transform: uppercase;
 	font-weight: 200;
@@ -191,10 +264,14 @@ section{
 	transition-duration: 500ms;
 	cursor: pointer;
 }
-
 #menuPrimary li:hover{
 	transition-duration: 500ms;
 	color:rgba(255,255,255,0.7);
+}
+/** End Home Section **/
+/** About Section **/
+#aboutSection{
+	padding-top: 0em;
 }
 .feature-box{
 	opacity: 0.5;
@@ -210,6 +287,7 @@ section{
 .feature-box .feature-info p{
 	font-size: 1.4em;
 	font-weight: 400;
+	margin-bottom: 0;
 }
 .feature-box .feature-subinfo{
 	font-size: 0.8em;
@@ -236,40 +314,9 @@ section{
 .feature-box:active .hover-orange{
 	color:#ff6d00;
 }
-#aboutSection{
-	padding-top: 0em;
-}
-section .heading{
-	font-size: 60px;
-	font-weight: 400;
-	color:rgba(255,255,255,0.7);
-}
-.description{
-	font-size:1.5em;
-}
-section .description{
-	font-weight: 300;
-}
-.section-heading{
-	position: absolute;
-    top: 0;
-    left: 0;
-    height: auto;
-    padding: 0;
-    font-size: 8em;
-    margin: 0.5em 0 0 0.2em;
-    font-weight: 600;
-    color: rgba(255,255,255,0.3);
-}
 @media all and (min-width:300px){
-	section .heading{
-		font-size: 28px;
-	}
 	.feature-box{
 		height: 100px;
-	}
-	.description{
-		font-size:1em;
 	}
 	.feature-icon i{
 		font-size: 2em;
@@ -280,28 +327,10 @@ section .description{
 	.feature-box .feature-subinfo{
 		font-size: 0.8em;
 	}
-	.section-heading{
-		font-size: 4em;
-	}
 }
-@media all and (min-width:400px){
-	section .heading{
-		font-size: 40px;
-	}
-	.section-heading{
-		font-size: 6em;
-	}
-}
-
 @media all and (min-width:768px){
-	section .heading{
-		font-size: 60px;
-	}
 	.feature-box{
 		height: 200px;
-	}
-	.description{
-		font-size:1.5em;
 	}
 	.feature-icon i{
 		font-size: 4em;
@@ -312,15 +341,13 @@ section .description{
 	.feature-box .feature-subinfo{
 		font-size: 0.8em;
 	}
-	.section-heading{
-		font-size: 8em;
-	}
 }
+/** Portfolio Section **/
 .portfolio-box{
 	height:200px;
 	overflow: hidden;
 	position: relative;
-	border-radius: 0.5em;
+
 	overflow: hidden;
 }
 .portfolio-box .portfolio-image{
@@ -338,28 +365,29 @@ section .description{
 	height:100%;
 	overflow: hidden;
 }
-.portfolio-box .portfolio-image .image-overlay{
-	position: absolute;
-	background: transparent;
-	box-shadow: inset 0 0 50px 1px #000;
-	width: 100%;
-	height: 100%;
-	top:0;left:0;
-}
 .portfolio-box .portfolio-image img{
-	position: relative;
-	max-width:100%;
-	max-height: 100%;
-	min-width:100%;
-	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	max-width:92%;
+	max-height: 92%;
+	min-width: 92%;
+	min-height: 92%;
+	box-shadow: 0px 0px 20px 1px rgba(255,255,255,0.8);
 	border-radius: 0.5em;
 }
 .portfolio-box .portfolio-info{
 	position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+    width: 92%;
+    height: 92%;
     font-size: 28px;
     font-weight: 700;
 	color:rgba(255,255,255,0.9);
@@ -367,7 +395,7 @@ section .description{
     background: rgba(0,176,255,0.9);
     transition-duration: 1s;
 	text-transform: uppercase;
-	border-radius: 0.5em;
+	border-radius: 0.3em;
 }
 .portfolio-box .portfolio-subinfo{
 	text-transform: capitalize;
@@ -383,7 +411,6 @@ section .description{
 	opacity: 1;
 	transition-duration: 1s;
 }
-
 @media all and (max-width:400px){
 	.portfolio-box{
 		height: 150px;
@@ -395,8 +422,93 @@ section .description{
 		font-size: 16px;
 	}
 }
-
+/** Footer **/
 #mainFooter{
 	font-size: 0.7em;
 	color: rgba(255,255,255,0.5);
+}
+/** End Footer **/
+/** Floating Controls **/
+.floating-control{
+	position: absolute;
+	color:rgba(255,255,255,0.3);
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 300;
+	transition-duration: 1s;
+	text-align: center;
+}
+.floating-control.control-top{
+	top:0;
+	margin-top:5px;
+}
+.floating-control.control-bottom{
+	bottom:0;
+	margin-bottom:5px;
+}
+.floating-control:hover,
+.floating-control:active{
+		color:rgba(255,255,255,0.7);
+}
+/** End Floating Controls **/
+/** Links Container **/
+.linksContainer>ul{
+	position: relative;
+	margin:10px auto !important;
+	left:0;right:0;
+	top:0;bottom:0;
+	list-style-type: none;
+	padding: 0;
+	color:rgba(255,255,255,0.5);
+	text-align: center;
+}
+.linksContainer .col{
+	display: inline-block;
+	float: none;
+}
+.linksContainer a{
+	text-decoration: none;
+	color:inherit;
+}
+.linksContainer>ul>li{
+	transition-duration: 500ms;
+	display: inline-block;
+}
+#contactSection .linksContainer>ul>li i.fa{
+	font-size: 2em !important;
+}
+.linksContainer>ul>li:hover{
+	color:rgba(255,255,255,0.9);
+	transition-duration: 500ms;
+	cursor: pointer;
+}
+.linksContainer>ul>li.hover-blue:hover,
+.linksContainer>ul>li.hover-blue:focus,
+.linksContainer>ul>li.hover-blue:active{
+	color:#1565c0;
+}
+.linksContainer>ul>li.hover-lblue:hover,
+.linksContainer>ul>li.hover-lblue:focus,
+.linksContainer>ul>li.hover-lblue:active{
+	color:#40c4ff;
+}
+.linksContainer>ul>li.hover-red:hover,
+.linksContainer>ul>li.hover-red:focus,
+.linksContainer>ul>li.hover-red:active{
+	color:#c62828;
+}
+.linksContainer>ul>li.hover-yellow:hover,
+.linksContainer>ul>li.hover-yellow:focus,
+.linksContainer>ul>li.hover-yellow:active{
+	color:#fbc02d;
+}
+/** End Links Container **/
+/** Animations **/
+@keyframes blink{
+	from{
+		opacity: 0.2;
+	}
+	to{
+		opacity: 0.8;
+	}
 }
