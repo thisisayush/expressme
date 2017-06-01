@@ -1,73 +1,73 @@
 {
     "meta":{
-        "title":"Ayush Agarwal | Portfolio"
+        "title":"Express Me | Portfolio"
     },
 	"home": {
 		"title": "Home",
-		"heading": "Ayush Agarwal",
-		"subheading": ["Student", "Programmer","Dreamer"],
+		"heading": "Express Me",
+		"subheading": ["Customisable", "Attractive","Smooth"],
         "avatar": "images/avatar.png"
 	},
 	"about": {
 		"title": "About",
-		"heading": "",
-		"description": "I am a B.Tech (CSE) second year student studying in Amity University. Deeply interested in Web Development, you can ping me for coffee, freelance/team web projects, sharing experience or to be a partner in your startup :)",
+		"heading": "Lorem ipsum dolor sit amet",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ipsum elit, sodales vitae elit in, fringilla imperdiet tellus. Proin quis est massa. Phasellus dictum augue eu sem vulputate euismod. Curabitur nisl sem, mattis vitae rhoncus a, porta nec eros. In ex arcu, porttitor eu magna non, rhoncus laoreet sem.",
 		"featureBox": [{
 				"icon": "fa-university",
 				"hover": "default",
-				"info": "Amity University",
-				"subinfo": "B.Tech (CSE)"
+				"info": "Student",
+				"subinfo": "Neque porro quisquam est"
 			},
 			{
 				"icon": "fa-coffee",
 				"hover": "yellow",
 				"info": "I <i class=\"fa fa-heart hover-red\"></i> Coffee",
-				"subinfo": ""
+				"subinfo": "Neque porro quisquam est"
 			},
 			{
 				"icon": "fa-chrome",
 				"hover": "orange",
 				"info": "Web Developer",
-				"subinfo": ""
+				"subinfo": "Neque porro quisquam est"
 			},
 			{
 				"icon": "fa-suitcase",
 				"hover": "default",
 				"info": "Entrepreneur",
-				"subinfo": ""
+				"subinfo": "Neque porro quisquam est"
 			}
 		]
 	},
 	"portfolio": {
 		"title": "Portfolio",
 		"heading": "Some of My Works",
-		"description": "",
+		"description": "Curabitur nisl sem, mattis vitae rhoncus a, porta nec eros. In ex arcu, porttitor eu magna non, rhoncus laoreet sem. Donec sed eros elementum, porta velit at, consequat lectus.",
 		"portfolioBox": [{
 				"image": "images/portfolio1.jpg",
-				"info": "ASET ALiAS",
-				"subinfo": "A club website based on Bootstrap, Jquery and JSON"
+				"info": "Lorem Ipsum",
+				"subinfo": "Donec sed eros elementum, porta velit at, consequat lectus"
 			},
 			{
 				"image": "images/portfolio2.jpg",
-				"info": "fbGallery",
-				"subinfo": "A jquery plugin to show images from facebook page"
+				"info": "Lorem Ipsum",
+				"subinfo": "Donec sed eros elementum, porta velit at, consequat lectus"
 			},
 			{
 				"image": "images/portfolio3.jpg",
-				"info": "ExpressMe",
-				"subinfo": "A personal portfolio page this website is running on!"
+				"info": "Lorem Ipsum",
+				"subinfo": "Donec sed eros elementum, porta velit at, consequat lectus"
 			},
 			{
 				"image": "images/portfolio4.jpg",
-				"info": "Letstream",
-				"subinfo": "A Video Publishing Platform"
+				"info": "Lorem Ipsum",
+				"subinfo": "Donec sed eros elementum, porta velit at, consequat lectus"
 			}
 		]
 	},
 	"contact": {
 		"title": "Contact",
 		"heading": "Find me on",
-		"description": ""
+		"description": "nteger luctus sapien eu nulla vestibulum rutrum. Suspendisse semper erat sed erat accumsan sagittis. Nullam ac magna gravida, euismod massa id, cursus ligula."
 	},
 	"links": [{
 			"title": "Find me on Facebook",

@@ -18,8 +18,6 @@
  **/
 
 $(document).ready(function(e){
-    getData();
-
     /** Load Particles Background **/
     particlesJS.load('particles','js/particles-config.json');
 
@@ -52,7 +50,6 @@ $(document).ready(function(e){
         });
     }
     $(window).scroll(function(){
-        console.log($(this).scrollTop());
         if($(this).scrollTop() == 0){
             $("#pageTop").fadeOut(500);
         }else{
